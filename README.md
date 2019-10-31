@@ -44,3 +44,5 @@ Point :
 
 result
 ![step4](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/4.png)
+
+![step5](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/5.png)
