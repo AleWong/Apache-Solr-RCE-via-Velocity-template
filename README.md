@@ -14,18 +14,27 @@ https://gist.githubusercontent.com/s00py/a1ba36a3689fa13759ff910e179fc133/raw/fa
 随后访问http://x.x.x.x:8983/solr/#/进入主界面,点击左侧的Core Selector查看集合名称
 ![step 1](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/1.png)
 
-使用如下两个payload
+使用如下两个payload 
+Using these payloads
+
 1.修改集合设置
 ![step 2](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/2.png)
 
-2.命令执行
+2.命令执行 
+Exec
 ![step 3](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/3.png)
-命令执行成功
+
+命令执行成功!
+Success!
 
 exp.py描述
 难点在于
+Point :
 1.需要 search node 并且 遍历判断可以POST的node
+1.We need to search nodes and reverse which could be POSTde
+
 2.需要判断操作系统版本输入命令执行操作
+2.Also ,We need to determine the operating system version and decide to enter the command to perform the operation.
 
 result
 ![step4](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/4.png)
