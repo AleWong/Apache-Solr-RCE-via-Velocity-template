@@ -16,13 +16,16 @@ https://gist.githubusercontent.com/s00py/a1ba36a3689fa13759ff910e179fc133/raw/fa
 
 使用如下两个payload
 1.修改集合设置
-![step 2](hhttps://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/2.png)
+![step 2](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/2.png)
 
 2.命令执行
-![step 3](hhttps://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/3.png)
+![step 3](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/3.png)
 命令执行成功
 
 exp.py描述
 难点在于
 1.需要 search node 并且 遍历判断可以POST的node
 2.需要判断操作系统版本输入命令执行操作
+
+result
+![step4](https://github.com/AleWong/Apache-Solr-RCE-via-Velocity-template/blob/master/4.png)
