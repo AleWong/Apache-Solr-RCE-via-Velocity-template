@@ -33,9 +33,15 @@ Success!
 
 修复建议
 
-1.建议确保网络设置只允许可信的流量与Solr进行通信。
-
-2.把params.resource.loader.enabled 指定为false， 然后把配置文件设置成只读。
+建议确保网络设置只允许可信的流量与Solr进行通信。
+把params.resource.loader.enabled 指定为false， 然后把配置文件设置成只读。
+默认情况下params.resource.loader.enabled为false是没有配置文件的，如果要修改其对应的值或强制修改，就需要配置文件
+默认情况下，node的配置文件configoverlay.json为读写权限
+配置文件路径：(根据实际情况而定)
+./example/example-DIH/solr/db/conf/configoverlay.json:
+./example/example-DIH/solr/mail/conf/configoverlay.json:
+./example/example-DIH/solr/solr/conf/configoverlay.json:
+把所有的configoverlay.json中的params.resource.loader.enabled设置为false，如果没有configoverlay.json，建议手动创建一个，然后将其权限设置成只读即可
 
 exp.py描述
 
