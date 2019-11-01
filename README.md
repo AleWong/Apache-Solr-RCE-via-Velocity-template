@@ -31,9 +31,17 @@ Exec
 命令执行成功!
 Success!
 
+修复建议
+
+1.建议确保网络设置只允许可信的流量与Solr进行通信。
+
+2.把params.resource.loader.enabled 指定为false， 然后把配置文件设置成只读。
+
 exp.py描述
+
 难点在于
 Point :
+
 1.需要 search node 并且 遍历判断可以POST的node
 
 1.We need to search nodes and reverse which could be POSTde
