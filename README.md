@@ -43,6 +43,8 @@ Success!
 ./example/example-DIH/solr/solr/conf/configoverlay.json:
 把所有的configoverlay.json中的params.resource.loader.enabled设置为false，如果没有configoverlay.json，建议手动创建一个，然后将其权限设置成只读即可
 
+It is recommended to ensure that the network settings only allow trusted traffic to communicate with Solr. Specify params.resource.loader.enabled as false, then set the configuration file to read-only. By default, params.resource.loader.enabled is false. There is no configuration file. If you want to modify its corresponding value or force modification, you need to configure the file. By default, the node configuration file configoverlay.json is the read-write permission configuration file. Path: (depending on the actual situation) ./example/example-DIH/solr/db/conf/configoverlay.json: ./example/example-DIH/solr/mail/conf/configoverlay.json: ./example/example -DIH/solr/solr/conf/configoverlay.json: Set all params.resource.loader.enabled in configoverlay.json to false. If there is no configoverlay.json, it is recommended to create one manually and then set its permissions to only Read it
+
 exp.py描述
 
 难点在于
